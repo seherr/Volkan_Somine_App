@@ -1,0 +1,315 @@
+﻿<Project ToolsVersion="15.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.0\build\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props" Condition="Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.0\build\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" />
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{D54EFD91-12AB-4D18-98D3-E925C494109F}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>VolkanSomine</RootNamespace>
+    <AssemblyName>VolkanSomine</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <UseIISExpress>true</UseIISExpress>
+    <Use64BitIISExpress />
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <UseGlobalApplicationHostFile />
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="System.Web.Razor">
+      <HintPath>..\packages\Microsoft.AspNet.Razor.3.2.4\lib\net45\System.Web.Razor.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Webpages">
+      <HintPath>..\packages\Microsoft.AspNet.Webpages.3.2.4\lib\net45\System.Web.Webpages.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Webpages.Deployment">
+      <HintPath>..\packages\Microsoft.AspNet.Webpages.3.2.4\lib\net45\System.Web.Webpages.Deployment.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Webpages.Razor">
+      <HintPath>..\packages\Microsoft.AspNet.Webpages.3.2.4\lib\net45\System.Web.Webpages.Razor.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Helpers">
+      <HintPath>..\packages\Microsoft.AspNet.Webpages.3.2.4\lib\net45\System.Web.Helpers.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Web.Infrastructure">
+      <HintPath>..\packages\Microsoft.Web.Infrastructure.1.0.0.0\lib\net40\Microsoft.Web.Infrastructure.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Mvc">
+      <HintPath>..\packages\Microsoft.AspNet.Mvc.5.2.4\lib\net45\System.Web.Mvc.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.CodeDom.Providers.DotNetCompilerPlatform">
+      <HintPath>..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.0\lib\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Files\about.html" />
+    <Content Include="Files\blog.html" />
+    <Content Include="Files\contact.html" />
+    <Content Include="Files\css\style.css" />
+    <Content Include="Files\img\about.jpg" />
+    <Content Include="Files\img\blog-1.jpg" />
+    <Content Include="Files\img\blog-2.jpg" />
+    <Content Include="Files\img\blog-3.jpg" />
+    <Content Include="Files\img\carousel-1.jpg" />
+    <Content Include="Files\img\carousel-2.jpg" />
+    <Content Include="Files\img\carousel-3.jpg" />
+    <Content Include="Files\img\portfolio-1.jpg" />
+    <Content Include="Files\img\portfolio-2.jpg" />
+    <Content Include="Files\img\portfolio-3.jpg" />
+    <Content Include="Files\img\portfolio-4.jpg" />
+    <Content Include="Files\img\portfolio-5.jpg" />
+    <Content Include="Files\img\portfolio-6.jpg" />
+    <Content Include="Files\img\post-1.jpg" />
+    <Content Include="Files\img\post-2.jpg" />
+    <Content Include="Files\img\post-3.jpg" />
+    <Content Include="Files\img\post-4.jpg" />
+    <Content Include="Files\img\post-5.jpg" />
+    <Content Include="Files\img\quote.png" />
+    <Content Include="Files\img\service-1.jpg" />
+    <Content Include="Files\img\service-2.jpg" />
+    <Content Include="Files\img\service-3.jpg" />
+    <Content Include="Files\img\service-4.jpg" />
+    <Content Include="Files\img\service-5.jpg" />
+    <Content Include="Files\img\service-6.jpg" />
+    <Content Include="Files\img\single.jpg" />
+    <Content Include="Files\img\team-1.jpg" />
+    <Content Include="Files\img\team-2.jpg" />
+    <Content Include="Files\img\team-3.jpg" />
+    <Content Include="Files\img\team-4.jpg" />
+    <Content Include="Files\img\testimonial-1.jpg" />
+    <Content Include="Files\img\testimonial-2.jpg" />
+    <Content Include="Files\img\testimonial-3.jpg" />
+    <Content Include="Files\img\testimonial-4.jpg" />
+    <Content Include="Files\img\user.jpg" />
+    <Content Include="Files\index.html" />
+    <Content Include="Files\js\main.js" />
+    <Content Include="Files\lib\animate\animate.css" />
+    <Content Include="Files\lib\animate\animate.min.css" />
+    <Content Include="Files\lib\counterup\counterup.min.js" />
+    <Content Include="Files\lib\easing\easing.js" />
+    <Content Include="Files\lib\easing\easing.min.js" />
+    <Content Include="Files\lib\flaticon\backup.txt" />
+    <Content Include="Files\lib\flaticon\font\flaticon.css" />
+    <Content Include="Files\lib\flaticon\font\flaticon.html" />
+    <Content Include="Files\lib\flaticon\font\Flaticon.svg" />
+    <Content Include="Files\lib\isotope\isotope.pkgd.js" />
+    <Content Include="Files\lib\isotope\isotope.pkgd.min.js" />
+    <Content Include="Files\lib\lightbox\css\lightbox.css" />
+    <Content Include="Files\lib\lightbox\css\lightbox.min.css" />
+    <Content Include="Files\lib\lightbox\images\close.png" />
+    <Content Include="Files\lib\lightbox\images\loading.gif" />
+    <Content Include="Files\lib\lightbox\images\next.png" />
+    <Content Include="Files\lib\lightbox\images\prev.png" />
+    <Content Include="Files\lib\lightbox\js\lightbox.js" />
+    <Content Include="Files\lib\lightbox\js\lightbox.min.js" />
+    <Content Include="Files\lib\lightbox\links.php" />
+    <Content Include="Files\lib\owlcarousel\assets\ajax-loader.gif" />
+    <Content Include="Files\lib\owlcarousel\assets\owl.carousel.css" />
+    <Content Include="Files\lib\owlcarousel\assets\owl.carousel.min.css" />
+    <Content Include="Files\lib\owlcarousel\assets\owl.theme.default.css" />
+    <Content Include="Files\lib\owlcarousel\assets\owl.theme.default.min.css" />
+    <Content Include="Files\lib\owlcarousel\assets\owl.theme.green.css" />
+    <Content Include="Files\lib\owlcarousel\assets\owl.theme.green.min.css" />
+    <Content Include="Files\lib\owlcarousel\assets\owl.video.play.png" />
+    <Content Include="Files\lib\owlcarousel\owl.carousel.js" />
+    <Content Include="Files\lib\owlcarousel\owl.carousel.min.js" />
+    <Content Include="Files\lib\slick\ajax-loader.gif" />
+    <Content Include="Files\lib\slick\fonts\slick.svg" />
+    <Content Include="Files\lib\slick\slick-theme.css" />
+    <Content Include="Files\lib\slick\slick.css" />
+    <Content Include="Files\lib\slick\slick.js" />
+    <Content Include="Files\lib\slick\slick.min.js" />
+    <Content Include="Files\lib\waypoints\links.php" />
+    <Content Include="Files\lib\waypoints\waypoints.min.js" />
+    <Content Include="Files\lib\wow\wow.js" />
+    <Content Include="Files\lib\wow\wow.min.js" />
+    <Content Include="Files\mail\contact.js" />
+    <Content Include="Files\mail\contact.php" />
+    <Content Include="Files\mail\jqBootstrapValidation.min.js" />
+    <Content Include="Files\portfolio.html" />
+    <Content Include="Files\service.html" />
+    <Content Include="Files\single.html" />
+    <Content Include="Files\team.html" />
+    <Content Include="Global.asax" />
+    <Content Include="img\1 %281%29.jpeg" />
+    <Content Include="img\1 %2810%29.jpeg" />
+    <Content Include="img\1 %282%29.jpeg" />
+    <Content Include="img\1 %283%29.jpeg" />
+    <Content Include="img\1 %284%29.jpeg" />
+    <Content Include="img\1 %285%29.jpeg" />
+    <Content Include="img\1 %286%29.jpeg" />
+    <Content Include="img\1 %287%29.jpeg" />
+    <Content Include="img\1 %288%29.jpeg" />
+    <Content Include="img\1 %289%29.jpeg" />
+    <Content Include="img\2 %281%29.jpeg" />
+    <Content Include="img\2 %2810%29.jpeg" />
+    <Content Include="img\2 %282%29.jpeg" />
+    <Content Include="img\2 %283%29.jpeg" />
+    <Content Include="img\2 %284%29.jpeg" />
+    <Content Include="img\2 %285%29.jpeg" />
+    <Content Include="img\2 %286%29.jpeg" />
+    <Content Include="img\2 %287%29.jpeg" />
+    <Content Include="img\2 %288%29.jpeg" />
+    <Content Include="img\2 %289%29.jpeg" />
+    <Content Include="img\3 %281%29.jpeg" />
+    <Content Include="img\3 %2810%29.jpeg" />
+    <Content Include="img\3 %282%29.jpeg" />
+    <Content Include="img\3 %283%29.jpeg" />
+    <Content Include="img\3 %284%29.jpeg" />
+    <Content Include="img\3 %285%29.jpeg" />
+    <Content Include="img\3 %286%29.jpeg" />
+    <Content Include="img\3 %287%29.jpeg" />
+    <Content Include="img\3 %288%29.jpeg" />
+    <Content Include="img\3 %289%29.jpeg" />
+    <Content Include="img\4 %281%29.jpeg" />
+    <Content Include="img\4 %2810%29.jpeg" />
+    <Content Include="img\4 %283%29.jpeg" />
+    <Content Include="img\4 %284%29.jpeg" />
+    <Content Include="img\4 %285%29.jpeg" />
+    <Content Include="img\4 %286%29.jpeg" />
+    <Content Include="img\4 %287%29.jpeg" />
+    <Content Include="img\4 %288%29.jpeg" />
+    <Content Include="img\4 %289%29.jpeg" />
+    <Content Include="img\5 %281%29.jpeg" />
+    <Content Include="img\5 %2810%29.jpeg" />
+    <Content Include="img\5 %2811%29.jpeg" />
+    <Content Include="img\5 %282%29.jpeg" />
+    <Content Include="img\5 %283%29.jpeg" />
+    <Content Include="img\5 %284%29.jpeg" />
+    <Content Include="img\5 %285%29.jpeg" />
+    <Content Include="img\5 %286%29.jpeg" />
+    <Content Include="img\5 %287%29.jpeg" />
+    <Content Include="img\5 %288%29.jpeg" />
+    <Content Include="img\5 %289%29.jpeg" />
+    <Content Include="img\6 %281%29.jpeg" />
+    <Content Include="img\6 %282%29.jpeg" />
+    <Content Include="img\6 %283%29.jpeg" />
+    <Content Include="img\6 %284%29.jpeg" />
+    <Content Include="img\6 %285%29.jpeg" />
+    <Content Include="Web.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="App_Start\RouteConfig.cs" />
+    <Compile Include="Controllers\DefaultController.cs" />
+    <Compile Include="Global.asax.cs">
+      <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\web.config" />
+    <Content Include="Files\lib\flaticon\font\Flaticon.eot" />
+    <Content Include="Files\lib\flaticon\font\Flaticon.ttf" />
+    <Content Include="Files\lib\flaticon\font\Flaticon.woff" />
+    <Content Include="Files\lib\flaticon\font\Flaticon.woff2" />
+    <Content Include="Files\lib\flaticon\font\_flaticon.scss" />
+    <Content Include="Files\lib\flaticon\license\license.pdf" />
+    <Content Include="Files\lib\owlcarousel\LICENSE" />
+    <Content Include="Files\lib\slick\config.rb" />
+    <Content Include="Files\lib\slick\fonts\slick.eot" />
+    <Content Include="Files\lib\slick\fonts\slick.ttf" />
+    <Content Include="Files\lib\slick\fonts\slick.woff" />
+    <Content Include="Files\lib\slick\slick-theme.less" />
+    <Content Include="Files\lib\slick\slick-theme.scss" />
+    <Content Include="Files\lib\slick\slick.less" />
+    <Content Include="Files\lib\slick\slick.scss" />
+    <None Include="packages.config" />
+    <Content Include="Views\Shared\_Layout.cshtml" />
+    <Content Include="Views\Default\Index.cshtml" />
+    <Content Include="Views\Default\Hakkimizda.cshtml" />
+    <None Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <None Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="App_Data\" />
+    <Folder Include="Models\" />
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>49718</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:49718/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>This project references NuGet package(s) that are missing on this computer. Use NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.0\build\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.0\build\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props'))" />
+  </Target>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
